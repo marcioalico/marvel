@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19162" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19144"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="CharacterTableViewCell" rowHeight="105" id="KHe-Z7-twQ" customClass="CharacterTableViewCell" customModule="Marvel" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="105"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="KHe-Z7-twQ" id="Wmd-AV-kQV">
+                <rect key="frame" x="0.0" y="0.0" width="414" height="105"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LYd-Bi-Gdj">
+                        <rect key="frame" x="20" y="19" width="374" height="67"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Kcc-iq-bWR">
+                                <rect key="frame" x="0.0" y="0.0" width="374" height="67"/>
+                            </imageView>
+                            <view alpha="0.20000000000000001" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bUN-nd-9wY">
+                                <rect key="frame" x="0.0" y="0.0" width="374" height="67"/>
+                                <color key="backgroundColor" name="MarvelGray"/>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1Py-jh-iTj">
+                                <rect key="frame" x="0.0" y="0.0" width="374" height="67"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="1Py-jh-iTj" firstAttribute="leading" secondItem="LYd-Bi-Gdj" secondAttribute="leading" id="4AQ-VJ-ypP"/>
+                            <constraint firstItem="bUN-nd-9wY" firstAttribute="leading" secondItem="LYd-Bi-Gdj" secondAttribute="leading" id="FPU-MK-VFo"/>
+                            <constraint firstItem="Kcc-iq-bWR" firstAttribute="top" secondItem="LYd-Bi-Gdj" secondAttribute="top" id="FPw-DD-ow5"/>
+                            <constraint firstAttribute="bottom" secondItem="Kcc-iq-bWR" secondAttribute="bottom" id="IXT-0z-Sa9"/>
+                            <constraint firstAttribute="trailing" secondItem="bUN-nd-9wY" secondAttribute="trailing" id="Iju-JO-005"/>
+                            <constraint firstItem="Kcc-iq-bWR" firstAttribute="leading" secondItem="LYd-Bi-Gdj" secondAttribute="leading" id="LAY-xJ-gKf"/>
+                            <constraint firstAttribute="bottom" secondItem="1Py-jh-iTj" secondAttribute="bottom" id="WM6-JA-4o1"/>
+                            <constraint firstAttribute="trailing" secondItem="Kcc-iq-bWR" secondAttribute="trailing" id="WNJ-VW-UR5"/>
+                            <constraint firstItem="1Py-jh-iTj" firstAttribute="top" secondItem="LYd-Bi-Gdj" secondAttribute="top" id="Yzn-dK-WLe"/>
+                            <constraint firstItem="bUN-nd-9wY" firstAttribute="top" secondItem="LYd-Bi-Gdj" secondAttribute="top" id="irx-BW-7H3"/>
+                            <constraint firstAttribute="trailing" secondItem="1Py-jh-iTj" secondAttribute="trailing" id="tWE-I3-wXb"/>
+                            <constraint firstAttribute="bottom" secondItem="bUN-nd-9wY" secondAttribute="bottom" id="umF-Dc-8vF"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                <constraints>
+                    <constraint firstItem="LYd-Bi-Gdj" firstAttribute="top" secondItem="Wmd-AV-kQV" secondAttribute="top" constant="19" id="07Q-jS-xsE"/>
+                    <constraint firstAttribute="trailing" secondItem="LYd-Bi-Gdj" secondAttribute="trailing" constant="20" symbolic="YES" id="8v3-Mh-F6K"/>
+                    <constraint firstItem="LYd-Bi-Gdj" firstAttribute="leading" secondItem="Wmd-AV-kQV" secondAttribute="leading" constant="20" symbolic="YES" id="HLK-F1-AVE"/>
+                    <constraint firstAttribute="bottom" secondItem="LYd-Bi-Gdj" secondAttribute="bottom" constant="19" id="anc-DK-JYt"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <connections>
+                <outlet property="containerView" destination="LYd-Bi-Gdj" id="V1s-UA-JFe"/>
+                <outlet property="grayView" destination="bUN-nd-9wY" id="21Y-Sy-MGh"/>
+                <outlet property="nameLabel" destination="1Py-jh-iTj" id="GeD-hd-RdS"/>
+                <outlet property="thumbnailImageView" destination="Kcc-iq-bWR" id="nzQ-yW-ZHl"/>
+            </connections>
+            <point key="canvasLocation" x="108.69565217391305" y="161.04910714285714"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <namedColor name="MarvelGray">
+            <color red="0.31000000238418579" green="0.28999999165534973" blue="0.28999999165534973" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+        </namedColor>
+    </resources>
+</document>
